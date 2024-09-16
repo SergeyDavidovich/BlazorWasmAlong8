@@ -1,7 +1,6 @@
 # BlazorWasmAlong8
 This has only main.yml file for deployment Blazor WASM Stand along project on GitHub Page service (Blazor ver 8.0.x)
-
-This sample:
+-----
 name: Deploy to GitHub Pages
 
 # Run workflow on every push to the master branch
@@ -43,6 +42,10 @@ jobs:
       
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: release/wwwroot
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
