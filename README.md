@@ -1,8 +1,8 @@
 # BlazorWasmAlong8
 This has only main.yml file for deployment Blazor WASM Stand along project on GitHub Page service (Blazor ver 8.0.x)
 -----
-name: Deploy to GitHub Pages
 
+name: Deploy to GitHub Pages
 # Run workflow on every push to the master branch
 on:
   push:
